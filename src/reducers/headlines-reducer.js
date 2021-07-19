@@ -1,12 +1,12 @@
 import * as c from './../actions/ActionTypes';
 
-const intitialState = {
+const initialState = {
   isLoading: false,
   headlines: [],
   error: null
 }
 
-export default (state = defaultState, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case c.REQUEST_HEADLINES:
       return Object.assign({}, state, {
